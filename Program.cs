@@ -14,7 +14,7 @@ namespace tpmodul4_1302201132
             Console.WriteLine("Nama User: ");
 
             String a = Console.ReadLine();
-            HaloGeneric.SapaUser<String>(a);
+            HaloGeneric.SapaUser <String> (a);
 
             Console.WriteLine("NIM User: ");
             String NIM = Console.ReadLine();
@@ -24,13 +24,13 @@ namespace tpmodul4_1302201132
     }
     class HaloGeneric
     {
-        public static void SapaUser<R>(R nama)
+        public static void SapaUser <R> (R nama)
         {
-            Console.WriteLine("Halo User " + nama);
+            Console.WriteLine("Halo User " + nama); 
 
         }
     }
-    class DataGeneric<T>
+    class DataGeneric <T>
     {
         private T data;
 
@@ -42,7 +42,7 @@ namespace tpmodul4_1302201132
         public void PrintData()
         {
             Console.WriteLine("NIM: " + data);
-
+ 
         }
     }
 }
